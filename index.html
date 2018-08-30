@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My angular project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -59,15 +60,17 @@
                     <h5>Let's uncover the best places to eat, drink, and shop nearest to you.</h5>
                 </div>
                 <div class="slider-content-form">
-                    <form>
-                        <div class="slider-search-content">
-                            <input type="text" placeholder="What are your looking for?" class="question">
-                            <input type="text" placeholder="New york" class="city">
-                            <button type="submit" class="submit-btn">
-                                <span class="icon-magnifier search-icon"></span>SEARCH
-                            </button>
-                        </div>
-                    </form>
+                    <div class="col-md-10">
+                        <form>
+                            <div class="btn-group slider-search-content">
+                                <input type="text" placeholder="What are your looking for?" class="question">
+                                <input type="text" placeholder="New york" class="city">
+                                <button type="submit" class="submit-btn">
+                                    <span class="icon-magnifier search-icon"></span>SEARCH
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                     <div class="slider-link">
                         <a href="#">Browse Popular</a>
                         <span>OR</span>
@@ -113,7 +116,7 @@
                             <p>577 Listings</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="relat-cont-img">
                         <img class="img-fluid fluid-img" src="./assets/find-place5.jpg" />
                         <div class="img-content">
                             <h5>Art & Culture </h5>
@@ -128,13 +131,17 @@
         <!-- -------------------------- Future place code start here------------------------------------------------ -->
         <div class="place-block">
             <div class="container">
-                <div class="col-md-5 need-content">
+                <!-- <div class="row"> -->
+                <!-- <div class="col-md-5"> -->
+                <div class="need-content">
                     <h3>Featured Places</h3>
                 </div>
+                <!-- </div> -->
+                <!-- </div> -->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="feture-block">
-                            <a href="detail.html">
+                            <a href="detail.html" class="feture">
                                 <img class="img-fluid" src="./assets/featured1.jpg" />
                                 <span class="rating">6.5</span>
                                 <div class="feture-dtail">
@@ -146,22 +153,22 @@
                                     <p class="dolar">$$$<span class="dolar-two">$$</span></p>
                                     <ul>
                                         <li>
-                                            <span class="icon-location-pin"></span>
+                                            <span class="fa fa-map-marker location"></span>
                                             <p>1301 Avenue, Brooklyn, NY 11230</p>
                                         </li>
                                         <li>
-                                            <span class="icon-screen-smartphone"></span>
+                                            <span class="fal fa-mobile location"></span>
                                             <p>+44 20 7336 8898</p>
                                         </li>
                                         <li>
-                                            <span class="icon-link"></span>
+                                            <span class="fa fa-link fa-rotate-90 location"></span>
                                             <p>https://burgerandlobster.com</p>
                                         </li>
                                     </ul>
                                     <div class="close-btn">
                                         <div class="close-now">CLOSED NOW</div>
-                                        <span class="ti-heart"></span>
-                                        <span class="ti-bookmark"></span>
+                                        <span class="fa fa-heart-o"></span>
+                                        <span class="fa fa-bookmark-o"></span>
                                     </div>
                                 </div>
                             </a>
@@ -181,22 +188,22 @@
                                     <p class="dolar">$$$<span class="dolar-two">$$</span></p>
                                     <ul>
                                         <li>
-                                            <span class="icon-location-pin"></span>
+                                            <span class="fa fa-map-marker location"></span>
                                             <p>1301 Avenue, Brooklyn, NY 11230</p>
                                         </li>
                                         <li>
-                                            <span class="icon-screen-smartphone"></span>
+                                            <span class="fal fa-mobile location"></span>
                                             <p>+44 20 7336 8898</p>
                                         </li>
                                         <li>
-                                            <span class="icon-link"></span>
+                                            <span class="fa fa-link fa-rotate-90 location"></span>
                                             <p>https://burgerandlobster.com</p>
                                         </li>
                                     </ul>
                                     <div class="close-btn">
                                         <div class="close-now">CLOSED NOW</div>
-                                        <span class="ti-heart"></span>
-                                        <span class="ti-bookmark"></span>
+                                        <span class="fa fa-heart-o"></span>
+                                        <span class="fa fa-bookmark-o"></span>
                                     </div>
                                 </div>
                             </a>
@@ -216,22 +223,22 @@
                                     <p class="dolar">$$$<span class="dolar-two">$$</span></p>
                                     <ul>
                                         <li>
-                                            <span class="icon-location-pin"></span>
+                                            <span class="fa fa-map-marker location"></span>
                                             <p>1301 Avenue, Brooklyn, NY 11230</p>
                                         </li>
                                         <li>
-                                            <span class="icon-screen-smartphone"></span>
+                                            <span class="fal fa-mobile location"></span>
                                             <p>+44 20 7336 8898</p>
                                         </li>
                                         <li>
-                                            <span class="icon-link"></span>
+                                            <span class="fa fa-link fa-rotate-90 location"></span>
                                             <p>https://burgerandlobster.com</p>
                                         </li>
                                     </ul>
                                     <div class="close-btn">
                                         <div class="open-now">OPEN NOW</div>
-                                        <span class="ti-heart"></span>
-                                        <span class="ti-bookmark"></span>
+                                        <span class="fa fa-heart-o"></span>
+                                        <span class="fa fa-bookmark-o"></span>
                                     </div>
                                 </div>
                             </a>
@@ -241,12 +248,141 @@
             </div>
         </div>
         <!-- -------------------------- Future place code end here------------------------------------------------ -->
+
+        <!-- -------------------------- Browser category code start here------------------------------------------ -->
+        <div class="category">
+            <div class="container">
+                <div class="need-content">
+                    <h3>Browse Categories</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-cogs font-color"></i>
+                                <h6>Automotive</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-pagelines font-color"></i>
+                                <h6>Beauty & Spa</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-building-o font-color"></i>
+                                <h6>Hotel</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-cutlery font-color"></i>
+                                <h6>Restaurant</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-shopping-bag font-color"></i>
+                                <h6>Shopping</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-coffee font-color"></i>
+                                <h6>Coffee</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-beer font-color"></i>
+                                <h6>Club & Bar</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 category-responsive">
+                        <div class="category-block">
+                            <a href="#" class="category-link">
+                                <i class="fa fa-map-marker font-color"></i>
+                                <h6>Destinations</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------- Browser category code end here------------------------------------------ -->
+
+        <!-- -------------------------- Reach many code start here---------------------------------------------- -->
+        <div class="reach">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="need-content reach-many">
+                            <h2>Reach millions of People</h2>
+                            <p>Add your Business infront of millions and earn 3x profits from our listing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="need-content reach-many">
+                            <a href="#" class="btn btn-danger">
+                                <i class="fa fa-plus" aria-hidden="true"></i> ADD LISTING</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------- Reach many code end here---------------------------------------------- -->
     </div>
     <!-- Body section end here -->
 
-
     <!-- Footer section start here -->
-
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="need-content copyright">
+                        <p>Copyright © 2018 Listing. All rights reserved | This template is made with
+                            <i class="fa fa-heart-o"></i> by <a href="https://colorlib.com">Colorlib</a>
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer section end here -->
 </body>
 
