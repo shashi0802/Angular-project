@@ -41,44 +41,32 @@
 }
 
 /* -------------------------------------------------  body code  ----------------------------------------------------- */
-.body-container{
-    width: 100%;
-    /* margin: 65px 0 0 0; */
-}
-.slider-container{
-    width: 100%;
+
+/* new baner code */
+.container-data{
     position: relative;
     text-align: center;
     color: white;
 }
-.slider-content{
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.slider-content-wrap h1{
-    font-size: 72px;
-    color: #fff;
-    font-weight: 300;
-}
-.slider-content-wrap h5{
+.wrapper h5{
     color: #909090;
     font-weight: 400;
     margin: 24px 0;
 }
-.slider-search-content{
-    width: 80%;
-    display: inline-flex;
-}
-.slider-search-content .question{
+.question{
     padding: 24px;
     width: 40%;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border: none;
 }
-.slider-search-content .city{
+.city{
     position: relative;
     padding: 24px;
     width: 33%;
@@ -87,7 +75,7 @@
     border-bottom: none;
     border-left: 1px solid #ccc;
 }
-.slider-search-content .submit-btn{
+.btn-form {
     font-weight: 400;
     font-size: 18px;
     padding: 17px;
@@ -98,72 +86,93 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-.slider-link a{
+.link{
     color: #909090;
-    text-decoration: underline;
-}
-.slider-link span{
-    color: #909090;
-    margin: 0px 20px;
+    margin: 45px 0 0;
+    font-size: 19px;
 }
 
-/* media query */
-@media only screen and (max-width: 1220px) {
-    .slider-content {
-        background-color: yellow;
-    }
-    .slider-content-wrap h1 {
-        font-size: 40px;
-    }
-}
+/* media query start here */
+
 @media only screen and (max-width: 992px) {
-    .slider-content {
-        background-color: blue;
+    .wrapper h1{
+        font-size: 24px;
     }
-    .slider-content-wrap h5{
-        margin: 14px 0;
+    .wrapper h5{
+        margin: 9px 0;
         font-size: 1.2rem;
     }
 }
 @media only screen and (max-width: 768px) {
-    .slider-content {
-        background-color: green;
+    .centered {
+        top: 58%;
     }
-    .slider-content-wrap h1 {
+    .wrapper h5 {
+        margin: 0px 0;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .centered {
+        top: 61%;
+    }
+    .wrapper h1 {
         font-size: 20px;
     }
-    .slider-content-wrap h5 {
-        margin: 2px 0;
-        font-size: 0.9rem;
+    .wrapper h5 {
+        font-size: 0.8rem;
+    }
+    .btn-group{
+        display: block;
+    }
+    .question {
+        width: 79%;
+        margin-left: 11%;
+        margin: 0 0 10px;
+        padding: 0px;
+    }
+    .city {
+        width: 79%;
+        margin: 0 0 10px;
+        padding: 0px;
+    }
+    .btn-form{
+        font-size: 14px;
+        padding: 0px;
+        width: 79%;
+    }
+    .link {
+        margin: 0px 0 0;
+        font-size: 10px;
     }
 }
-@media only screen and (max-width: 576px) {
-    .slider-content {
-        background-color: orange;
+@media only screen and (max-width: 500px) {
+    .wrapper h1 {
+        font-size: 15px;
     }
-    .question{
-        width: 100%;
-        border-radius: 3px;
-        margin: 0 0 10px;
-        padding: 17px;
+    .wrapper h5 {
+        font-size: 0.5rem;
+        color: white;
     }
-    .city{
-        width: 100%;
-        border-radius: 3px;
-        margin: 0 0 10px;
-        padding: 17px;
+    .mt-4{
+        margin: 10px !important;
     }
-    .submit-btn{
-        width: 100%;
-        border-radius: 3px;
+} 
+@media only screen and (max-width: 464px)
+{
+    .centered {
+        top: 64%;
     }
 }
-@media only screen and (max-width: 400px) {
-    .slider-content {
-        background-color: red;
+@media only screen and (max-width: 464px){
+    .link {
+        margin: -7px 0 0;
+        font-size: 8px;
     }
 }
 /* media query end */
+
+/* new baner code end */
 
 .need-content{
     text-align: center;
